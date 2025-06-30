@@ -21,16 +21,16 @@ import (
 	"github.com/mattermost/mattermost/server/public/pluginapi/cluster"
 	"github.com/mattermost/mattermost/server/public/shared/i18n"
 
-	"github.com/mattermost/mattermost-plugin-playbooks/server/api"
-	"github.com/mattermost/mattermost-plugin-playbooks/server/app"
-	"github.com/mattermost/mattermost-plugin-playbooks/server/bot"
-	"github.com/mattermost/mattermost-plugin-playbooks/server/command"
-	"github.com/mattermost/mattermost-plugin-playbooks/server/config"
-	"github.com/mattermost/mattermost-plugin-playbooks/server/enterprise"
-	"github.com/mattermost/mattermost-plugin-playbooks/server/metrics"
-	"github.com/mattermost/mattermost-plugin-playbooks/server/scheduler"
-	"github.com/mattermost/mattermost-plugin-playbooks/server/sqlstore"
-	"github.com/mattermost/mattermost-plugin-playbooks/server/telemetry"
+	"github.com/mattermost/mattermost-plugin-tech-develop/server/api"
+	"github.com/mattermost/mattermost-plugin-tech-develop/server/app"
+	"github.com/mattermost/mattermost-plugin-tech-develop/server/bot"
+	"github.com/mattermost/mattermost-plugin-tech-develop/server/command"
+	"github.com/mattermost/mattermost-plugin-tech-develop/server/config"
+	"github.com/mattermost/mattermost-plugin-tech-develop/server/enterprise"
+	"github.com/mattermost/mattermost-plugin-tech-develop/server/metrics"
+	"github.com/mattermost/mattermost-plugin-tech-develop/server/scheduler"
+	"github.com/mattermost/mattermost-plugin-tech-develop/server/sqlstore"
+	"github.com/mattermost/mattermost-plugin-tech-develop/server/telemetry"
 
 	_ "time/tzdata" // for systems that don't have tzdata installed
 )
@@ -111,13 +111,6 @@ func (p *Plugin) OnActivate() error {
 	p.metricsService = p.newMetricsInstance()
 	pluginAPIClient := pluginapi.NewClient(p.API, p.Driver)
 	p.pluginAPI = pluginAPIClient
-
-	if !pluginapi.IsE20LicensedOrDevelopment(
-		pluginAPIClient.Configuration.GetConfig(),
-		pluginAPIClient.System.GetLicense(),
-	) {
-		return errors.New("this plugin requires an enterprise license")
-	}
 
 	p.config = config.NewConfigService(pluginAPIClient, manifest)
 

@@ -13,9 +13,9 @@ import (
 	"github.com/sirupsen/logrus"
 
 	"github.com/gorilla/mux"
-	"github.com/mattermost/mattermost-plugin-playbooks/server/app"
-	"github.com/mattermost/mattermost-plugin-playbooks/server/bot"
-	"github.com/mattermost/mattermost-plugin-playbooks/server/config"
+	"github.com/mattermost/mattermost-plugin-tech-develop/server/app"
+	"github.com/mattermost/mattermost-plugin-tech-develop/server/bot"
+	"github.com/mattermost/mattermost-plugin-tech-develop/server/config"
 	"github.com/mattermost/mattermost/server/public/model"
 
 	"github.com/mattermost/mattermost/server/public/pluginapi"

@@ -1,10 +1,10 @@
-# Mattermost Playbooks
+# Mattermost Tech-Develop
 
 [![Release](https://img.shields.io/github/v/release/mattermost/mattermost-plugin-playbooks)](https://github.com/mattermost/mattermost-plugin-playbooks/releases/latest)
 
-Mattermost Playbooks allows your team to create and run playbooks from within Mattermost. For configuration and administration information visit our [documentation](https://docs.mattermost.com/guides/playbooks.html).
+Mattermost Tech-Develop allows your team to create and run tech-develop from within Mattermost. For configuration and administration information visit our [documentation](https://docs.mattermost.com/guides/playbooks.html).
 
-![Mattermost Playbooks](assets/incident_response.png)
+![Mattermost Tech-Develop](assets/incident_response.png)
 
 ## Development Builds
 In your `mattermost-server` configuration (`config/config.json`), set the following values:
@@ -31,19 +31,19 @@ If you're running Mattermost Starter and don't already have a valid license, you
 
 ## Generating test data
 
-To quickly test Mattermost Playbooks, use the following test commands to create playbook runs populated with random data:
+To quickly test Mattermost Tech-Develop, use the following test commands to create tech-develop runs populated with random data:
 
-- `/playbook test create-playbooks [total playbooks]` - Provide a number of total playbooks that will be created. The command creates one or more playbooks based on the given parameter.
+- `/tech-develop test create-tech-develops [total tech-develops]` - Provide a number of total tech-develops that will be created. The command creates one or more tech-develops based on the given parameter.
 
-  * An example command looks like: `/playbook test create-playbooks 5`
+  * An example command looks like: `/tech-develop test create-tech-develops 5`
 
-- `/playbook test create-playbook-run [playbook ID] [timestamp] [playbook run name]` - Provide the ID of an existing playbook to which the current user has access, a timestamp, and a playbook run name. The command creates an ongoing playbook run with the creation date set to the specified timestamp.
+- `/tech-develop test create-tech-develop-run [tech-develop ID] [timestamp] [tech-develop run name]` - Provide the ID of an existing tech-develop to which the current user has access, a timestamp, and a tech-develop run name. The command creates an ongoing tech-develop run with the creation date set to the specified timestamp.
 
-  * An example command looks like: `/playbook test create-playbook-run 6utgh6qg7p8ndeef9edc583cpc 2020-11-23 PR-Testing`
+  * An example command looks like: `/tech-develop test create-tech-develop-run 6utgh6qg7p8ndeef9edc583cpc 2020-11-23 PR-Testing`
 
-- `/playbook test bulk-data [ongoing] [ended] [days] [seed]` - Provide a number of ongoing and ended playbook runs, a number of days, and an optional random seed. The command creates the given number of ongoing and ended playbook runs, with creation dates randomly between `n` days ago and the day when the command was issued. The seed may be used to reproduce the same outcome on multiple invocations. Names are generated randomly.
+- `/tech-develop test bulk-data [ongoing] [ended] [days] [seed]` - Provide a number of ongoing and ended tech-develop runs, a number of days, and an optional random seed. The command creates the given number of ongoing and ended tech-develop runs, with creation dates randomly between `n` days ago and the day when the command was issued. The seed may be used to reproduce the same outcome on multiple invocations. Names are generated randomly.
 
-  * An example command looks like: `/playbook test bulk-data 10 3 342 2`
+  * An example command looks like: `/tech-develop test bulk-data 10 3 342 2`
 
 ## Running E2E tests
 
@@ -101,14 +101,14 @@ For more information about contributing to Mattermost, and the different ways yo
 Logging should use the logrus package (not `pluginAPI.Log`, `mlog`, or `log`). The standard logger is automatically wired into the pluginAPI and proxied through the server:
 
 ```go
-logger := logrus.WithField("playbook_run_id", playbookRunID)
+logger := logrus.WithField("tech_develop_run_id", techDevelopRunID)
 
-err := findUserForPlaybookRunAndTeam(playbookRunID, userID, teamID)
+err := findUserForTechDevelopRunAndTeam(techDevelopRunID, userID, teamID)
 if err != nil {
     logrus.WithError(err).WithFields(logrus.Fields{
         "user_id": userID,
         "team_id": teamID,
-    }).Warn("Failed to find user for playbook run and team")
+    }).Warn("Failed to find user for tech-develop run and team")
 }
 ```
 
@@ -118,7 +118,7 @@ A few guidelines when logging:
   * Warn: a warning log might require investigation if it occurs in bulk, but does not require human action
   * Info: a information log provides context that will typically be logged by default
   * Debug: a debug log provides context that will typically be logged only on demand
-* Write static log messages (`Failed to find user for playbook run and team`) instead of interpolating parameters into the log message itself (`Failed to find user %s for playbook run %s and team %s`)
+* Write static log messages (`Failed to find user for tech-develop run and team`) instead of interpolating parameters into the log message itself (`Failed to find user %s for tech-develop run %s and team %s`)
 * Use snake case when naming fields. Try to name these fields consistently with other usage.
 * Pass errors using `WithError`.
 * Use `WithFields` when passing more than one field that is not an `err`.
@@ -137,4 +137,4 @@ All migrations in the `future` folder should have both migration directions - `u
 * [Help wanted tickets currently up for grab]([https://github.com/mattermost/mattermost-server/issues?q=is%3Aopen+is%3Aissue+label%3AArea%2FPlaybooks+label%3A%22Up+For+Grabs%22](https://github.com/mattermost/mattermost-plugin-playbooks/issues?q=is%3Aopen+is%3Aissue+label%3A%22Help+Wanted%22+label%3A%22Up+For+Grabs%22))
 * [Good first issue tickets]([https://github.com/mattermost/mattermost-server/issues?q=is%3Aopen+is%3Aissue+label%3AArea%2FPlaybooks+label%3A%22Good+First+Issue%22+label%3A%22Up+For+Grabs%22](https://github.com/mattermost/mattermost-plugin-playbooks/issues?q=is%3Aopen+is%3Aissue+label%3A%22Good+First+Issue%22))
 
-For more information, join the discussion in the [`Developers: Playbooks` channel](https://community.mattermost.com/core/channels/developers-playbooks).
+For more information, join the discussion in the [`Developers: Tech-Develop` channel](https://community.mattermost.com/core/channels/developers-playbooks).

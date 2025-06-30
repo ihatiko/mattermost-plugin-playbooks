@@ -29,8 +29,8 @@ import (
 	"github.com/mattermost/mattermost/server/v8/channels/utils"
 	"github.com/mattermost/mattermost/server/v8/config"
 
-	"github.com/mattermost/mattermost-plugin-playbooks/client"
-	"github.com/mattermost/mattermost-plugin-playbooks/server/app"
+	"github.com/mattermost/mattermost-plugin-tech-develop/client"
+	"github.com/mattermost/mattermost-plugin-tech-develop/server/app"
 )
 
 func TestMain(m *testing.M) {

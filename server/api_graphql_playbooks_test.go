@@ -12,9 +12,9 @@ import (
 	"testing"
 
 	"github.com/graph-gophers/graphql-go"
-	"github.com/mattermost/mattermost-plugin-playbooks/client"
-	"github.com/mattermost/mattermost-plugin-playbooks/server/api"
-	"github.com/mattermost/mattermost-plugin-playbooks/server/app"
+	"github.com/mattermost/mattermost-plugin-tech-develop/client"
+	"github.com/mattermost/mattermost-plugin-tech-develop/server/api"
+	"github.com/mattermost/mattermost-plugin-tech-develop/server/app"
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

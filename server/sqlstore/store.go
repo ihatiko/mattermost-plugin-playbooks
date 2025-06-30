@@ -13,7 +13,7 @@ import (
 
 	"github.com/mattermost/mattermost/server/public/model"
 
-	"github.com/mattermost/mattermost-plugin-playbooks/server/app"
+	"github.com/mattermost/mattermost-plugin-tech-develop/server/app"
 )
 
 // maxJSONLength holds the limit we set for JSON data in postgres

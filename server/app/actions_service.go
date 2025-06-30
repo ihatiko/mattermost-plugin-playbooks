@@ -15,9 +15,9 @@ import (
 	"github.com/mattermost/mattermost/server/public/model"
 	"github.com/mattermost/mattermost/server/public/pluginapi"
 
-	"github.com/mattermost/mattermost-plugin-playbooks/server/bot"
-	"github.com/mattermost/mattermost-plugin-playbooks/server/config"
-	"github.com/mattermost/mattermost-plugin-playbooks/server/safemapstructure"
+	"github.com/mattermost/mattermost-plugin-tech-develop/server/bot"
+	"github.com/mattermost/mattermost-plugin-tech-develop/server/config"
+	"github.com/mattermost/mattermost-plugin-tech-develop/server/safemapstructure"
 )
 
 type PlaybookGetter interface {

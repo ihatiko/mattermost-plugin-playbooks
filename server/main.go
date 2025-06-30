@@ -8,7 +8,7 @@ import (
 	"os"
 
 	"github.com/graph-gophers/graphql-go"
-	"github.com/mattermost/mattermost-plugin-playbooks/server/api"
+	"github.com/mattermost/mattermost-plugin-tech-develop/server/api"
 	"github.com/mattermost/mattermost/server/public/plugin"
 )
 

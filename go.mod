@@ -1,10 +1,10 @@
-module github.com/mattermost/mattermost-plugin-playbooks
+module github.com/mattermost/mattermost-plugin-tech-develop
 
 go 1.23.0
 
 toolchain go1.23.9
 
-replace github.com/mattermost/mattermost-plugin-playbooks/client => ./client
+replace github.com/mattermost/mattermost-plugin-tech-develop/client => ./client
 
 replace github.com/HdrHistogram/hdrhistogram-go => github.com/codahale/hdrhistogram v1.1.2
 
@@ -25,7 +25,7 @@ require (
 	github.com/hashicorp/go-multierror v1.1.1
 	github.com/jmoiron/sqlx v1.4.0
 	github.com/lib/pq v1.10.9
-	github.com/mattermost/mattermost-plugin-playbooks/client v0.7.0
+	github.com/mattermost/mattermost-plugin-tech-develop/client v0.7.0
 	github.com/mattermost/mattermost/server/public v0.1.12
 	github.com/mattermost/mattermost/server/v8 v8.0.0-20250508153915-3be58f5f3418
 	github.com/mattermost/morph v1.1.0

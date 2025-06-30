@@ -15,8 +15,8 @@ import (
 
 	"github.com/mattermost/mattermost/server/public/model"
 
-	"github.com/mattermost/mattermost-plugin-playbooks/server/app"
-	mock_app "github.com/mattermost/mattermost-plugin-playbooks/server/app/mocks"
+	"github.com/mattermost/mattermost-plugin-tech-develop/server/app"
+	mock_app "github.com/mattermost/mattermost-plugin-tech-develop/server/app/mocks"
 )
 
 func Test_userInfoStore_Get(t *testing.T) {

@@ -21,11 +21,11 @@ import (
 	"github.com/mattermost/mattermost/server/public/pluginapi"
 	"github.com/mattermost/mattermost/server/public/shared/i18n"
 
-	"github.com/mattermost/mattermost-plugin-playbooks/server/bot"
-	"github.com/mattermost/mattermost-plugin-playbooks/server/config"
-	"github.com/mattermost/mattermost-plugin-playbooks/server/httptools"
-	"github.com/mattermost/mattermost-plugin-playbooks/server/metrics"
-	"github.com/mattermost/mattermost-plugin-playbooks/server/timeutils"
+	"github.com/mattermost/mattermost-plugin-tech-develop/server/bot"
+	"github.com/mattermost/mattermost-plugin-tech-develop/server/config"
+	"github.com/mattermost/mattermost-plugin-tech-develop/server/httptools"
+	"github.com/mattermost/mattermost-plugin-tech-develop/server/metrics"
+	"github.com/mattermost/mattermost-plugin-tech-develop/server/timeutils"
 )
 
 const checklistItemDescriptionCharLimit = 4000

@@ -145,7 +145,7 @@
     },
     {
         "id": "app.user.new_run.playbook",
-        "translation": "Пособие"
+        "translation": "Тех-Разработка"
     },
     {
         "id": "app.user.run.update_status.finish_run",
@@ -193,7 +193,7 @@
     },
     {
         "id": "app.user.run.add_to_timeline.playbook_run",
-        "translation": "Пособие \"Бег"
+        "translation": "Тех-Разработка \"Запуск"
     },
     {
         "id": "app.user.run.add_to_timeline.submit_label",

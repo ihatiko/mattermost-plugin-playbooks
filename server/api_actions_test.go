@@ -12,8 +12,8 @@ import (
 
 	"github.com/mattermost/mattermost/server/public/model"
 
-	"github.com/mattermost/mattermost-plugin-playbooks/client"
-	"github.com/mattermost/mattermost-plugin-playbooks/server/safemapstructure"
+	"github.com/mattermost/mattermost-plugin-tech-develop/client"
+	"github.com/mattermost/mattermost-plugin-tech-develop/server/safemapstructure"
 )
 
 func TestActionCreation(t *testing.T) {

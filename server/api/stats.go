@@ -15,8 +15,8 @@ import (
 	"github.com/mattermost/mattermost/server/public/model"
 	"github.com/mattermost/mattermost/server/public/pluginapi"
 
-	"github.com/mattermost/mattermost-plugin-playbooks/server/app"
-	"github.com/mattermost/mattermost-plugin-playbooks/server/sqlstore"
+	"github.com/mattermost/mattermost-plugin-tech-develop/server/app"
+	"github.com/mattermost/mattermost-plugin-tech-develop/server/sqlstore"
 )
 
 type StatsHandler struct {

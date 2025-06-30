@@ -12,8 +12,8 @@ import (
 
 	"github.com/mattermost/mattermost/server/public/pluginapi"
 
-	"github.com/mattermost/mattermost-plugin-playbooks/server/app"
-	"github.com/mattermost/mattermost-plugin-playbooks/server/bot"
+	"github.com/mattermost/mattermost-plugin-tech-develop/server/app"
+	"github.com/mattermost/mattermost-plugin-tech-develop/server/bot"
 )
 
 // TelemetryHandler is the API handler.

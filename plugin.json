@@ -1,7 +1,7 @@
 {
-  "id": "playbooks",
-  "name": "Playbooks",
-  "description": "Mattermost Playbooks enable reliable and repeatable processes for your teams using checklists, automation, and retrospectives.",
+  "id": "tech-develop",
+  "name": "Tech-Develop",
+  "description": "Mattermost Tech-Develop enable reliable and repeatable processes for your teams using checklists, automation, and retrospectives.",
   "homepage_url": "https://github.com/mattermost/mattermost-plugin-playbooks/",
   "support_url": "https://github.com/mattermost/mattermost-plugin-playbooks/issues",
   "icon_path": "assets/plugin_icon.svg",
@@ -26,14 +26,14 @@
         "key": "enableTeamsTabApp",
         "display_name": "Enable Teams Tab App",
         "type": "bool",
-        "help_text": "When true, enable a Microsoft Teams Tab app to expose Mattermost Playbook runs.",
+        "help_text": "When true, enable a Microsoft Teams Tab app to expose Mattermost Tech-Develop runs.",
         "default": false
       },
       {
         "key": "teamsTabAppTenantIDs",
         "display_name": "Authorized Tenant IDs for Teams Tab App",
         "type": "text",
-        "help_text": "A comma separated list of Microsoft Tenant IDs allowed to access Playbook runs.",
+        "help_text": "A comma separated list of Microsoft Tenant IDs allowed to access Tech-Develop runs.",
         "default": ""
       },
       {

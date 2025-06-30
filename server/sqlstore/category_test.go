@@ -12,8 +12,8 @@ import (
 
 	"github.com/mattermost/mattermost/server/public/model"
 
-	"github.com/mattermost/mattermost-plugin-playbooks/server/app"
-	mock_sqlstore "github.com/mattermost/mattermost-plugin-playbooks/server/sqlstore/mocks"
+	"github.com/mattermost/mattermost-plugin-tech-develop/server/app"
+	mock_sqlstore "github.com/mattermost/mattermost-plugin-tech-develop/server/sqlstore/mocks"
 )
 
 func setupCategoryStore(t *testing.T, db *sqlx.DB) app.CategoryStore {

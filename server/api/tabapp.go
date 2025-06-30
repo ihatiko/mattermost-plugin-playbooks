@@ -14,8 +14,8 @@ import (
 	"github.com/golang-jwt/jwt/v5"
 	"github.com/mattermost/mattermost/server/public/pluginapi"
 
-	"github.com/mattermost/mattermost-plugin-playbooks/server/app"
-	"github.com/mattermost/mattermost-plugin-playbooks/server/config"
+	"github.com/mattermost/mattermost-plugin-tech-develop/server/app"
+	"github.com/mattermost/mattermost-plugin-tech-develop/server/config"
 	"github.com/sirupsen/logrus"
 )
 

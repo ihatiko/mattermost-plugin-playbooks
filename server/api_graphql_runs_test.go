@@ -17,8 +17,8 @@ import (
 	"github.com/mattermost/mattermost/server/public/model"
 	"github.com/mattermost/mattermost/server/public/shared/request"
 
-	"github.com/mattermost/mattermost-plugin-playbooks/client"
-	"github.com/mattermost/mattermost-plugin-playbooks/server/app"
+	"github.com/mattermost/mattermost-plugin-tech-develop/client"
+	"github.com/mattermost/mattermost-plugin-tech-develop/server/app"
 )
 
 func TestGraphQLRunList(t *testing.T) {
